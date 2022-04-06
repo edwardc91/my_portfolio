@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+  client:
+    container_name: my_portafolio
+    build:
+      context: . 
+      dockerfile: docker/client/Dockerfile
+      args:
+        - http_proxy=${HTTP_PROXY}
+        - https_proxy=${HTTPS_PROXY}
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    ports:
+      - 5000:3000
+      # network_mode: host
+    restart: always
+    volumes:
+      - ./client:/project
