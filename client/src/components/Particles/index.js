@@ -21,7 +21,19 @@ const Particles = () => {
             move: {
               enable: true
             }
-          }
+          },
+          backgroundMask: {
+            enable: true,
+            cover: {
+              color: {
+                value: {
+                  r: 0,
+                  g: 0,
+                  b: 0,
+                }
+              }
+            }
+          },
         }}
       />
   );
