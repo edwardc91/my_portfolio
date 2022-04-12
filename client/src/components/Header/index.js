@@ -13,19 +13,19 @@ const Header = () => {
     return (
         <div style={{ marginTop: "12%" }}>
             <Row justify="center">
-                <Col span={12} style={{ textAlign: "center", zIndex: "101" }}>
+                <Col className="front-particles" span={12} style={{ textAlign: "center" }}>
                     <Image src="images/programmer.gif" preview={false} style={{ width: 300 }}/>
                 </Col>
             </Row>
             <Row justify="center" style={{ marginTop: "2%", textAlign: "center" }}>
-                <Col span={12} style={{ zIndex: "101" }}>
+                <Col span={12} className="front-particles">
                     <h1 className="title">
                         <Typed strings={["Eduardo Miguel Hernández"]} typeSpeed={40} />
                     </h1>
                 </Col>
             </Row>
             <Row justify="center" style={{ marginTop: "2%", textAlign: "center" }}>
-                <Col span={12} style={{ zIndex: "101" }}>
+                <Col span={12} className="front-particles">
                     <h2 className="title">
                         <Typed
                             strings={[
