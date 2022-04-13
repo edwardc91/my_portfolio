@@ -6,7 +6,7 @@ import BottomNavbar from "../../components/BottomNavbar";
 const Home = () => {
 
     return (
-        <React.Fragment>
+        <React.Fragment >
             <Header />
             <BottomNavbar />
             <Particles />
