@@ -28,7 +28,7 @@ const Particles = () => {
         },
         particles: {
           color: { value: '#ffffff' },
-          links: { color: '#ffffff', distance: 150, enable: true, opacity: 0.5, width: 1 },
+          //links: { color: '#ffffff', distance: 150, enable: true, opacity: 0.5, width: 1 },
           move: {
             bounce: false,
             direction: 'none',
@@ -38,10 +38,10 @@ const Particles = () => {
             speed: 2,
             straight: false,
           },
-          number: { density: { enable: true, value_area: 800 }, value: 80 },
+          number: { density: { enable: true, value_area: 800 }, value: 150 },
           opacity: { value: 0.5 },
-          shape: { type: 'circle' },
-          size: { random: true, value: 5 },
+          shape: { type: 'square' },
+          size: { random: true, value: 7 },
         },
         detectRetina: true,
       }}
