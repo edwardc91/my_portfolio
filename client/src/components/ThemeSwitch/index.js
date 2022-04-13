@@ -19,11 +19,11 @@ const ThemeSwitch = () => {
 
     return (
         <>
-            <span><b>Change theme:</b>  </span>
+            <span className="font-pixel font-color"><b>Change theme:</b>  </span>
             <Switch
                 checkedChildren={<BulbOutlined />}
                 unCheckedChildren={<BulbFilled />}
-                defaultChecked={currentTheme == "dark" ? true : false }
+                defaultChecked={currentTheme === "dark" ? true : false }
                 onChange={handleOnChange}
             />
         </>

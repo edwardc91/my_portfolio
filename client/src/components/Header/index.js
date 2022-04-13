@@ -17,6 +17,7 @@ const Header = () => {
                 <Col className="front-particles" span={12}>
                     <a href="https://github.com/edwardc91">
                         <Image src="images/github-qr.svg" preview={false} style={{ width: 130 }} />
+                        <Title className="title font-pixel" level={3}> Check my github here</Title>
                     </a>
                 </Col>
             </Row>
