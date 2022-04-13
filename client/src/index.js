@@ -3,14 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './modules/app';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from "react-redux";
+import store from "./config/store";
 
 import 'antd/dist/antd.min.css'
 
-ReactDOM.render(
-  <React.StrictMode>
+const container = document.getElementById('root');
+
+// Create a root.
+const root = ReactDOM.createRoot(container);
+
+root.render(
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </Provider >
 );
 
 // If you want to start measuring performance in your app, pass a function
