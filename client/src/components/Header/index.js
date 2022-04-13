@@ -12,7 +12,7 @@ const { Title } = Typography;
 const Header = () => {
 
     return (
-        <div>
+        <div className="main-container-home" style={{ paddingBottom: "8%"}}>
             <Row>
                 <Col className="front-particles" span={12}>
                     <a href="https://github.com/edwardc91">
