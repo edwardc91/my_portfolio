@@ -1,32 +1,40 @@
 import React from "react";
 import {
-    Layout,
     Row,
     Col,
-    Avatar,
-    Image
+    Image,
+    Typography,
 } from 'antd'
 import Typed from "react-typed";
+
+const { Title } = Typography;
 
 const Header = () => {
 
     return (
-        <div style={{ marginTop: "12%" }}>
-            <Row justify="center">
+        <div>
+            <Row>
+                <Col className="front-particles" span={12}>
+                    <a href="https://github.com/edwardc91">
+                        <Image src="images/github-qr.svg" preview={false} style={{ width: 130 }} />
+                    </a>
+                </Col>
+            </Row>
+            <Row justify="center" style={{ marginTop: "5%" }}>
                 <Col className="front-particles" span={12} style={{ textAlign: "center" }}>
-                    <Image src="images/programmer.gif" preview={false} style={{ width: 300 }}/>
+                    <Image src="images/programmer.gif" preview={false} style={{ width: 300 }} />
                 </Col>
             </Row>
             <Row justify="center" style={{ marginTop: "2%", textAlign: "center" }}>
                 <Col span={12} className="front-particles">
-                    <h1 className="title">
+                    <Title className="title font-pixel" level={1}>
                         <Typed strings={["Eduardo Miguel Hernández"]} typeSpeed={40} />
-                    </h1>
+                    </Title>
                 </Col>
             </Row>
             <Row justify="center" style={{ marginTop: "2%", textAlign: "center" }}>
                 <Col span={12} className="front-particles">
-                    <h2 className="title">
+                    <Title className="title font-pixel" level={2}>
                         <Typed
                             strings={[
                                 "Fullstack Developer",
@@ -38,7 +46,7 @@ const Header = () => {
                             backSpeed={50}
                             loop
                         />
-                    </h2>
+                    </Title>
                 </Col>
             </Row>
         </div>
