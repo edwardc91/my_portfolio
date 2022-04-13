@@ -1,12 +1,23 @@
 @import './scss/themes/theme-dark.scss';
 
+@font-face{
+  font-family: "half-bold-pixel-7-regular";
+  src: local("half-bold-pixel-7-regular"),
+    url("./fonts/Half_Bold_Pixel-7/half-bold-pixel-7.regular.ttf") format("truetype");
+    font-weight: bold;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "half-bold-pixel-7-regular", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.font-pixel{
+  font-family:"half-bold-pixel-7-regular";
 }
 
 code {

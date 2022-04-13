@@ -1,4 +1,6 @@
 import React from "react";
+import { Col, Image, Row } from "antd";
+
 import './index.scss';
 
 import ThemeSwitch from "../ThemeSwitch";
@@ -10,7 +12,9 @@ const BottomNavbar = () => {
             className="bottom-navbar"
             style={{ zIndex: "200" }}
         >
-            <ThemeSwitch />
+            <Row>
+                <Col flex="auto"><ThemeSwitch /></Col>
+            </Row>
         </nav>
     )
 }

@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import store from "./config/store";
 
 import 'antd/dist/antd.min.css'
+import './fonts/Half_Bold_Pixel-7/half-bold-pixel-7.regular.ttf';
 
 const container = document.getElementById('root');
 
