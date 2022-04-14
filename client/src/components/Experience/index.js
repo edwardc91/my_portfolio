@@ -10,49 +10,85 @@ import {
     VerticalTimeline,
     VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import Typed from 'react-typed'
 
 import "react-vertical-timeline-component/style.min.css";
 import "./index.scss"
 
-const { Title } = Typography;
+const { Title, Paragraph } = Typography;
 
 const Experience = () => {
 
     const experience_data = [
         {
-            "company": "DefOpenSource",
+            "company": "Geocuba Enterprises",
             "title": "Front-End Developer",
-            "years": "10.2019 - present",
+            "description": "Development of Web Applications for geo-spatial related services",
+            "years": "2020 - present",
             "mainTech": [
-                "Angular 8/9/10"
+                "Python Django"
             ],
             "technologies": [
                 "REST API",
-                "RxJS",
-                "JavaScript",
-                "Bootstrap",
-                "MDBootstrap",
-                "EF Core",
-                ".NET Core",
-                "SignalR",
-                "Angular Material"
+                "Python",
+                "Django",
+                "GeoDjango",
+                "ReactJS",
+                "Pandas",
+                "Postgres/Postgis",
+                "Geonode",
+                "Docker",
             ]
         },
         {
-            "company": "Serros Solutions",
-            "title": "Intern",
-            "years": "01.2018 - 09.2019",
+            "company": "IllumenAI",
+            "title": "Software Developer",
+            "description": "Development of a plataform for smart lights and sensors managment using AWS IoT. Development of software to calculate aggregation of electric consumption's data. Managment and deployment in AWS",
+            "years": "2019 - 2021",
             "mainTech": [
-                "Angular 7/8"
+                "Odoo"
             ],
             "technologies": [
-                "RxJS",
-                "Django",
-                "PHP",
-                "JavaScript",
-                "DHTMLX Gantt"
+                "Flask",
+                "AWS",
+                "ReactJS",
+                "Alembic",
+                "MySQL"
             ]
-        }
+        },
+        {
+            "company": "Desoft",
+            "title": "Specialist in Informatics Science",
+            "description": "ERP systems development  for several process in several companies",
+            "years": "2019 - 2020",
+            "mainTech": [
+                "Odoo"
+            ],
+            "technologies": [
+                "Odoo",
+                "Django",
+                "ReactJS",
+                "PostgreSQL"
+            ]
+        },
+        {
+            "company": "Chemical Bioactive Center (Central University of Las Villas)",
+            "title": "Software Developer",
+            "description": "Web applications developer, landing page developer and manager, and data manager specialist of a clinical trail.",
+            "years": "2015 - 2019",
+            "mainTech": [
+                "Django"
+            ],
+            "technologies": [
+                "Odoo",
+                "Django",
+                "ReactJS",
+                "PostgreSQL",
+                "OpenClinica",
+                "HTML/CSS",
+                "JavaScript",
+            ]
+        },
     ]
 
     const work = experience_data.map((work, i) => {
@@ -104,7 +140,10 @@ const Experience = () => {
                 >
                     {work.company}
                 </Title>
-                <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
+                <Paragraph className="font-pixel font-color">
+                    {work.description}
+                </Paragraph>
+                <div style={{ textAlign: "left" }}>{tech}</div>
             </VerticalTimelineElement>
         );
     });
@@ -116,12 +155,12 @@ const Experience = () => {
                 <Col span={24} className="front-particles">
                     <Col span={24} style={{ textAlign: "center" }}>
                         <Title className="font-pixel font-color">
-                            Experience
+                            <Typed strings={["Experience"]} typeSpeed={40} />
                         </Title>
                     </Col>
                 </Col>
             </Row>
-            <Row justify="center">
+            <Row justify="center" style={{marginTop: "3%"}}>
                 <Col span={20}>
                     <VerticalTimeline>
                         {work}

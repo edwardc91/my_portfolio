@@ -53,7 +53,7 @@ const Header = () => {
             <Row justify="center" style={{ marginTop: "2%", textAlign: "center" }}>
                 <Col span={12} className="front-particles">
                     <Title className="title font-pixel" level={5}>
-                        Keep scrolling for more...
+                        Keep scrolling to learn more...
                     </Title>
                 </Col>
             </Row>
