@@ -20,11 +20,24 @@ body[data-theme="dark"] {
     }
 
     .about-container {
-       background-color: rgba(49, 49, 49, 0.849);
+       background-color: rgb(85, 85, 85);
+    }
+
+    .experience-container {
+      background-color: rgb(37, 41, 52);
     }
 
     .font-color {
        color: white;
+    }
+
+    .vertical-timeline-element-content{
+      background-color: rgb(85, 85, 85);
+    }
+
+    .vertical-timeline-element-date{
+      font-family:"half-bold-pixel-7-regular";
+      color: white;
     }
 
 }
