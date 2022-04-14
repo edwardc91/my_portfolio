@@ -50,6 +50,13 @@ const Header = () => {
                     </Title>
                 </Col>
             </Row>
+            <Row justify="center" style={{ marginTop: "2%", textAlign: "center" }}>
+                <Col span={12} className="front-particles">
+                    <Title className="title font-pixel" level={5}>
+                        Keep scrolling for more...
+                    </Title>
+                </Col>
+            </Row>
         </div>
     )
 }
