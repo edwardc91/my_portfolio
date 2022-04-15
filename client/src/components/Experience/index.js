@@ -22,7 +22,7 @@ const Experience = () => {
     const experience_data = [
         {
             "company": "Geocuba Enterprises",
-            "title": "Front-End Developer",
+            "title": "Specialist in Informatics Science",
             "description": "Development of Web Applications for geo-spatial related services",
             "years": "2020 - present",
             "mainTech": [
@@ -46,7 +46,7 @@ const Experience = () => {
             "description": "Development of a plataform for smart lights and sensors managment using AWS IoT. Development of software to calculate aggregation of electric consumption's data. Managment and deployment in AWS",
             "years": "2019 - 2021",
             "mainTech": [
-                "Odoo"
+                "Python Flask/ReactJS"
             ],
             "technologies": [
                 "Flask",

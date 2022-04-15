@@ -27,6 +27,10 @@ body[data-theme="dark"] {
       background-color: rgb(37, 41, 52);
     }
 
+    .skills-container {
+      background-color: rgb(85, 85, 85);
+    }
+
     .font-color {
        color: white;
     }
@@ -38,6 +42,10 @@ body[data-theme="dark"] {
     .vertical-timeline-element-date{
       font-family:"half-bold-pixel-7-regular";
       color: white;
+    }
+
+    .skill-card {
+      background-color: rgb(37, 41, 52);
     }
 
 }
