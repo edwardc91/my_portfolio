@@ -151,11 +151,11 @@ const Skills = () => {
     }
 
     return (
-        <div className="skills-container" style={{ paddingTop: "3%", paddingBottom: "3%" }}>
+        <div id="skills" className="skills-container" style={{ paddingTop: "3%", paddingBottom: "3%" }}>
             <Row justify="center">
                 <Col span={24} className="front-particles">
                     <Col span={24} style={{ textAlign: "center" }}>
-                        <Title className="font-pixel font-color">
+                        <Title  className="font-pixel font-color">
                             <Typed strings={["Skills"]} typeSpeed={40} />
                         </Title>
                     </Col>

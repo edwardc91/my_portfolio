@@ -7,6 +7,10 @@
     font-weight: bold;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "half-bold-pixel-7-regular", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -31,4 +35,8 @@ code {
 
 .front-particles {
   z-index: 102;
+}
+
+.nav-bar-links {
+  font-size: larger;
 }

@@ -7,7 +7,7 @@ const { Title, Paragraph } = Typography;
 const About = () => {
 
     return (
-        <div className="about-container" style={{ padding: "5%" }}>
+        <div id="about-me" className="about-container" style={{ padding: "5%" }}>
             <Row justify="center">
                 <Col className="front-particles" span={10} style={{ textAlign: "center" }}>
                     <Image src="images/pc-worker-pixel.gif" preview={false} style={{ width: 600 }}/>
