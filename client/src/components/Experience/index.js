@@ -150,7 +150,7 @@ const Experience = () => {
 
 
     return (
-        <div className="experience-container" style={{ paddingTop: "3%", paddingBottom: "3%" }}>
+        <div id="experience" className="experience-container" style={{ paddingTop: "3%", paddingBottom: "3%" }}>
             <Row justify="center">
                 <Col span={24} className="front-particles">
                     <Col span={24} style={{ textAlign: "center" }}>

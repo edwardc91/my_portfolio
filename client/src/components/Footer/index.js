@@ -26,7 +26,7 @@ const Footer = () => {
                     <a className="font-color footer-media-link" href="https://www.instagram.com/edward_jorgeovich/"><InstagramFilled/></a>
                 </Col>
             </Row>
-            <Row justify="center" style={{ marginTop: "1%" }}>
+            <Row id="contact" justify="center" style={{ marginTop: "1%" }}>
                 <Col span={24} style={{ textAlign: "center" }}>
                     <Title className="font-color font-pixel" level={3}>Contact</Title>
                 </Col>

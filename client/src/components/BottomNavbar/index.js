@@ -14,6 +14,10 @@ const BottomNavbar = () => {
         >
             <Row>
                 <Col flex="auto"><ThemeSwitch /></Col>
+                <Col flex="auto"><a className="font-pixel font-color nav-bar-links" href="#about-me">About me</a></Col>
+                <Col flex="auto"><a className="font-pixel font-color nav-bar-links" href="#experience">Experience</a></Col>
+                <Col flex="auto"><a className="font-pixel font-color nav-bar-links" href="#skills">Skills</a></Col>
+                <Col flex="auto"><a className="font-pixel font-color nav-bar-links" href="#contact">Contact</a></Col>
             </Row>
         </nav>
     )
