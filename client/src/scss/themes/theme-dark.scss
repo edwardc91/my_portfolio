@@ -48,4 +48,16 @@ body[data-theme="dark"] {
       background-color: rgb(37, 41, 52);
     }
 
+    .card-skills-group {
+      color: white;
+      background-color: transparent;
+      border-color: white;
+    }
+
+    .ant-card-head {
+      color: white;
+      text-align: center;
+      //font-size: larger;
+    }
+
 }
