@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { Col, Grid, Row, Drawer, Button } from "antd";
-import { BarsOutlined } from '@ant-design/icons';
+import { Col, Grid, Row, Drawer, Button, Menu } from "antd";
+import { MenuOutlined } from '@ant-design/icons';
 
 import './index.scss';
 
 import ThemeSwitch from "../ThemeSwitch";
 
 const { useBreakpoint } = Grid;
+const { Item } = Menu;
 
 const BottomNavbar = () => {
     const { md } = useBreakpoint();
@@ -39,7 +40,7 @@ const BottomNavbar = () => {
                     :
                     <>
                         <Button className="barsMenu" type="outlined" onClick={showDrawer}>
-                            <BarsOutlined/>
+                            <MenuOutlined />
                         </Button>
                         <Drawer
                             placement="bottom"
@@ -47,11 +48,13 @@ const BottomNavbar = () => {
                             onClose={onCloseDrawer}
                             visible={drawerVisible}
                         >
-                            <Col flex="auto"><ThemeSwitch /></Col>
-                            <Col flex="auto"><a className="font-pixel font-color nav-bar-links" href="#about-me">About me</a></Col>
-                            <Col flex="auto"><a className="font-pixel font-color nav-bar-links" href="#experience">Experience</a></Col>
-                            <Col flex="auto"><a className="font-pixel font-color nav-bar-links" href="#skills">Skills</a></Col>
-                            <Col flex="auto"><a className="font-pixel font-color nav-bar-links" href="#contact">Contact</a></Col>
+                            <ThemeSwitch />
+                            <Menu mode="inline" style={{ marginTop: "1%"}}>
+                                <Item><a className="font-pixel font-color nav-bar-links" href="#about-me">About me</a></Item>
+                                <Item><a className="font-pixel font-color nav-bar-links" href="#experience">Experience</a></Item>
+                                <Item><a className="font-pixel font-color nav-bar-links" href="#skills">Skills</a></Item>
+                                <Item><a className="font-pixel font-color nav-bar-links" href="#contact">Contact</a></Item>
+                            </Menu>
                         </Drawer>
                     </>
                 }

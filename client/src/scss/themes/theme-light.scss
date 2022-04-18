@@ -1,13 +1,12 @@
 
-body[data-theme="dark"] {  
+body[data-theme="light"] {  
 
     // @import '../src/scss/dark-slider.scss';
 
-    $fontColor: white;
-    $primaryBackgroundColor: rgb(37, 41, 52);
-    $secondaryBackgroundColor :rgb(85, 85, 85);
-    $primaryBackgroundColorSelected: rgb(23, 32, 56);
-
+    $fontColor: black;
+    $primaryBackgroundColor: rgb(208, 230, 233);
+    $secondaryBackgroundColor :rgb(161, 161, 161);
+ 
     .slider-tab {
        background-color: #8C8C8C;
     }
@@ -51,19 +50,19 @@ body[data-theme="dark"] {
 
     .skill-card {
       background-color: $primaryBackgroundColor;
-      border: 1px solid $fontColor !important;
+      border: 2px solid $fontColor !important;
     }
 
     .card-skills-group {
       color: $fontColor;
       background-color: transparent;
-      border: 1px solid $fontColor;
+      border: 3px solid $fontColor;
     }
 
     .ant-card-head {
       color: $fontColor;
       text-align: center;
-      border-bottom: 1px solid $fontColor;
+      border-bottom: 3px solid $fontColor;
     }
 
     .ant-drawer-content {
@@ -98,11 +97,6 @@ body[data-theme="dark"] {
 
     .ant-menu {
       background-color: $primaryBackgroundColor;
-      color: $fontColor;
-    }
-
-    .ant-menu-item-selected {
-      background-color: $primaryBackgroundColorSelected !important;
       color: $fontColor;
     }
 
