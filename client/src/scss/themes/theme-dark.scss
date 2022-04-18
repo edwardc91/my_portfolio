@@ -81,5 +81,17 @@ body[data-theme="dark"] {
       background-color: transparent;
     }
 
+    .ant-progress-text{
+      color: $fontColor;
+    }
+
+    .ant-progress-steps-item {
+      background: $secondaryBackgroundColor;
+    }
+
+    .ant-progress-steps-item-active {
+      background: $fontColor !important;
+    }
+
 
 }
