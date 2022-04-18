@@ -16,7 +16,7 @@ const Header = () => {
     const { md } = useBreakpoint();
 
     return (
-        <div className="main-container-home" style={{ paddingBottom: "8%" }}>
+        <div className="main-container-home" style={{ paddingBottom: "8%", height: "100vh", overflow: "auto" }}>
             {
                 md ?
                     <>
@@ -32,21 +32,21 @@ const Header = () => {
                     :
                     <></>
             }
-            <Row justify="center" style={{ marginTop: "5%" }}>
-                <Col className="front-particles" span={12} style={{ textAlign: "center" }}>
+            <Row justify="center" style={{}}>
+                <Col className="front-particles" span={12} style={{ textAlign: "center", marginTop: md ? "5%" : "50%" }}>
                     <Image src="images/programmer.gif" preview={false} style={{ width: "100%" }} />
                 </Col>
             </Row>
             <Row justify="center" style={{ marginTop: "2%", textAlign: "center" }}>
                 <Col span={12} className="front-particles">
-                    <Title className="title font-pixel" level={1}>
+                    <Title className="title font-pixel" level={md ? 1 : 4}>
                         <Typed strings={["Eduardo Miguel Hernández"]} typeSpeed={40} />
                     </Title>
                 </Col>
             </Row>
             <Row justify="center" style={{ marginTop: "2%", textAlign: "center" }}>
                 <Col span={12} className="front-particles">
-                    <Title className="title font-pixel" level={2}>
+                    <Title className="title font-pixel" level={md ? 2 : 5}>
                         <Typed
                             strings={[
                                 "Fullstack Developer",
@@ -63,9 +63,15 @@ const Header = () => {
             </Row>
             <Row justify="center" style={{ marginTop: "2%", textAlign: "center" }}>
                 <Col span={12} className="front-particles">
-                    <Title className="title font-pixel" level={5}>
-                        Keep scrolling to learn more...
-                    </Title>
+                    {
+                        md ?
+                            <Title className="title font-pixel" level={5}>
+                                Keep scrolling to learn more...
+                            </Title>
+                            :
+                            <span className="title font-pixel">Keep scrolling to learn more...</span>
+                    }
+
                 </Col>
             </Row>
         </div>
