@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col, Typography, Card, Progress, Grid } from "antd"
 import Typed from 'react-typed'
 import { PieChart, Pie, Label, Cell, ResponsiveContainer } from 'recharts';
+import { useSelector } from 'react-redux'
 
 const { Title } = Typography;
 
@@ -9,6 +10,8 @@ const { useBreakpoint } = Grid
 
 const Skills = () => {
     const { md } = useBreakpoint();
+
+    const currentTheme = useSelector(state => state.themeSwitch.currentTheme)
 
     const skillsBackendData = [
         {
@@ -111,7 +114,7 @@ const Skills = () => {
         ]
     }
 
-    const COLORS = ["#ffffff", "#555555"]
+    const COLORS = currentTheme === "dark" ? ["#ffffff", "#555555"] : ["#555555", "#ffffff"]
 
     const generateSkills = (skills) => {
         if (md) {
@@ -131,15 +134,15 @@ const Skills = () => {
                                             endAngle={0}
                                             innerRadius={60}
                                             outerRadius={80}
-                                            fill="#ffffff"
-
+                                            fill={ currentTheme === "dark" ? "#ffffff" : "#000000"}
+                                            stroke={ currentTheme === "dark" ? "#ffffff" : "#000000"}
                                             dataKey="value"
                                             labelLine={false}
                                         >
                                             {getData(skill.name, skill.value).map((entry, index) => (
                                                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                                             ))}
-                                            <Label className="font-color" value={`${skill.value}%`} fill={'#fff'} position="center" />
+                                            <Label className="font-color" value={`${skill.value}%`} fill={currentTheme === "dark" ? '#fff' : "#000"} position="center" />
                                         </Pie>
                                     </PieChart>
                                 </ResponsiveContainer>

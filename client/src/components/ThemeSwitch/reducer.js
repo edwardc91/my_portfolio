@@ -5,15 +5,20 @@ const initialState = {
 }
 
 const themeSwitch = (state = initialState, action) => {
-    switch (action.type) {
-      case actions.SET_THEME:
-        return Object.assign({}, state, {
-            currentTheme: action.payload.theme,
-        })
-  
-      default:
-        return state
-    }
+  switch (action.type) {
+    case actions.SET_THEME:
+      var dataThemeAttribute = "data-theme";
+      var body = document.body;
+      var newTheme =
+        body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
+      body.setAttribute(dataThemeAttribute, newTheme);
+      return Object.assign({}, state, {
+        currentTheme: newTheme,
+      })
+
+    default:
+      return state
   }
-  
-  export default themeSwitch
+}
+
+export default themeSwitch

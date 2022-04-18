@@ -12,7 +12,7 @@ const ThemeSwitch = () => {
     const currentTheme = useSelector(state => state.themeSwitch.currentTheme)
 
     const handleOnChange = e => {
-        dispatch(({ type: actions.SET_THEME, payload: { theme: e.checked ? "dark" : "light" } }))
+        dispatch(({ type: actions.SET_THEME, payload: {} }))
     }
 
     const dispatch = useDispatch()

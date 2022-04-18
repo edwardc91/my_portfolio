@@ -5,6 +5,7 @@ import {
     Typography,
     Tag
 } from "antd";
+import { useSelector } from 'react-redux'
 
 import {
     VerticalTimeline,
@@ -18,6 +19,7 @@ import "./index.scss"
 const { Title, Paragraph } = Typography;
 
 const Experience = () => {
+    const currentTheme = useSelector(state => state.themeSwitch.currentTheme)
 
     const experience_data = [
         {
@@ -114,11 +116,13 @@ const Experience = () => {
         return (
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentArrowStyle={{ borderRight: '7px solid  #555555' }}
+                contentArrowStyle={{ borderRight: currentTheme === "dark" ? '7px solid  #555555' : '7px solid  #a1a1a1' }}
                 date={work.years}
                 iconStyle={{
-                    background: "#555555",
-                    color: "#fff",
+                    background: currentTheme === "dark" ? "#555555" : "#a1a1a1",
+                    color: currentTheme === "dark" ? "#fff" : "#000",
+                    box: currentTheme === "dark" ? "#fff" : "#000",
+                    boxShadow: currentTheme === "dark" ? "0 0 0 4px ,inset 0 2px 0 rgba(0,0,0,.08),0 3px 0 4px rgba(0,0,0,.05)" : "0 0 0 4px ,inset 0 2px 0 rgba(255,255,255,.08),0 3px 0 4px rgba(0,0,0,.05)",
                     textAlign: "center",
                 }}
                 //icon={<i className="fab fa-angular experience-icon"></i>}
@@ -162,7 +166,7 @@ const Experience = () => {
             </Row>
             <Row justify="center" style={{marginTop: "3%"}}>
                 <Col span={20}>
-                    <VerticalTimeline>
+                    <VerticalTimeline lineColor={ currentTheme === "dark" ? "white" : "black" }>
                         {work}
                         {/* <VerticalTimelineElement
                             iconStyle={{
