@@ -86,7 +86,7 @@ const Skills = () => {
 
     const skillsDevOpsData = [
         {
-            name: "Git/Gitlab/CI/CD",
+            name: "Git/CI-CD",
             value: 70,
             image_url: "images/skills_logos/django-logo.png"
         },
@@ -117,60 +117,26 @@ const Skills = () => {
     const COLORS = currentTheme === "dark" ? ["#ffffff", "#555555"] : ["#555555", "#ffffff"]
 
     const generateSkills = (skills) => {
-        if (md) {
-            return skills.map((skill, i) => {
-                return (
-                    <Col span={3} style={{ textAlign: "center" }} key={i}>
-                        <Card className="skill-card front-particles">
-                            <div style={{ width: 165, height: 180, margin: 'auto' }}>
-                                <ResponsiveContainer>
-                                    <PieChart className="front-particles">
-                                        <Pie
-                                            className="front-particles"
-                                            data={getData(skill.name, skill.value)}
-                                            cx="50%"
-                                            cy="50%"
-                                            startAngle={180}
-                                            endAngle={0}
-                                            innerRadius={60}
-                                            outerRadius={80}
-                                            fill={ currentTheme === "dark" ? "#ffffff" : "#000000"}
-                                            stroke={ currentTheme === "dark" ? "#ffffff" : "#000000"}
-                                            dataKey="value"
-                                            labelLine={false}
-                                        >
-                                            {getData(skill.name, skill.value).map((entry, index) => (
-                                                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                                            ))}
-                                            <Label className="font-color" value={`${skill.value}%`} fill={currentTheme === "dark" ? '#fff' : "#000"} position="center" />
-                                        </Pie>
-                                    </PieChart>
-                                </ResponsiveContainer>
-                            </div>
-                            {/* <Image src={skill.image_url} preview={false} style={{ marginTop: "3%", width: "130px" }} /> */}
-                            <Title className="font-pixel font-color" level={4} style={{ marginTop: "2%" }}>
-                                {skill.name}
-                            </Title>
-                        </Card>
-                    </Col>
-                )
-            }
-            )
-        } else {
-            return (
-                <Col xs={24}>
-                    <Card className="skill-card front-particles">
-                        {skills.map((skill, i) => {
-                            return (
-                                <div className="font-color" key={i}>{skill.name} <Progress percent={skill.value} steps={6} /></div>
-                            )
-                        }
+        return (
+            <Col xs={24}>
+                <Card className="skill-card front-particles">
+                    {skills.map((skill, i) => {
+                        return (
+                            <Row gutter={[8,8]}>
+                                <Col style={{ textAlign: md ? "end" : "start"}} span={12}>
+                                    <div className="font-color" key={i}>{skill.name} </div>
+                                </Col>
+                                <Col style={{ textAlign: "start"}} span={12}>
+                                    <Progress percent={skill.value} steps={6} />
+                                </Col>
+                            </Row>
                         )
-                        }
-                    </Card>
-                </Col>
-            )
-        }
+                    }
+                    )
+                    }
+                </Card>
+            </Col>
+        )
     }
 
     return (
@@ -184,26 +150,22 @@ const Skills = () => {
                     </Col>
                 </Col>
             </Row>
-            <Row justify="center" style={{ padding: "1%" }}>
-                <Col span={24}>
+            <Row gutter={[16, 16]} justify="center" style={{ padding: "1%" }}>
+                <Col xs={24} md={8}>
                     <Card title="Backend" className="font-pixel font-color card-skills-group">
                         <Row justify="space-around" style={{ padding: "2%" }} gutter={[8, 8]}>
                             {generateSkills(skillsBackendData)}
                         </Row>
                     </Card>
                 </Col>
-            </Row>
-            <Row justify="center" style={{ padding: "1%" }}>
-                <Col span={24}>
+                <Col xs={24} md={8}>
                     <Card title="Frontend" className="font-pixel font-color card-skills-group">
                         <Row justify="space-around" style={{ padding: "2%" }} gutter={[8, 8]}>
                             {generateSkills(skillsFrontendData)}
                         </Row>
                     </Card>
                 </Col>
-            </Row>
-            <Row justify="center" style={{ padding: "1%" }}>
-                <Col span={24}>
+                <Col xs={24} md={8}>
                     <Card title="DevOps" className="font-pixel font-color card-skills-group">
                         <Row justify="space-around" style={{ padding: "2%" }} gutter={[8, 8]}>
                             {generateSkills(skillsDevOpsData)}
