@@ -119,7 +119,7 @@ const Skills = () => {
                                     <div className="font-color" key={i}>{skill.name} </div>
                                 </Col>
                                 <Col style={{ textAlign: "start"}} span={12}>
-                                    <Progress percent={skill.value} steps={6} />
+                                    <Progress percent={skill.value} steps={6} showInfo={false}/>
                                 </Col>
                             </Row>
                         )
