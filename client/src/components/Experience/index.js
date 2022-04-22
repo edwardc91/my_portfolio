@@ -3,7 +3,8 @@ import {
     Row,
     Col,
     Typography,
-    Tag
+    Tag,
+    Grid
 } from "antd";
 import { useSelector } from 'react-redux'
 
@@ -17,8 +18,10 @@ import "react-vertical-timeline-component/style.min.css";
 import "./index.scss"
 
 const { Title, Paragraph } = Typography;
+const { useBreakpoint } = Grid;
 
 const Experience = () => {
+    const { md } = useBreakpoint();
     const currentTheme = useSelector(state => state.themeSwitch.currentTheme)
 
     const experience_data = [
@@ -166,7 +169,10 @@ const Experience = () => {
             </Row>
             <Row justify="center" style={{marginTop: "3%"}}>
                 <Col span={20}>
-                    <VerticalTimeline lineColor={ currentTheme === "dark" ? "white" : "black" }>
+                    <VerticalTimeline 
+                        lineColor={ currentTheme === "dark" ? "white" : "black" }
+                        animate={md}
+                        >
                         {work}
                         {/* <VerticalTimelineElement
                             iconStyle={{
