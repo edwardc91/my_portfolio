@@ -1,7 +1,6 @@
 import React from "react";
 import { Row, Col, Typography, Card, Progress, Grid } from "antd"
 import Typed from 'react-typed'
-import { PieChart, Pie, Label, Cell, ResponsiveContainer } from 'recharts';
 import { useSelector } from 'react-redux'
 
 const { Title } = Typography;
@@ -106,13 +105,6 @@ const Skills = () => {
             image_url: "images/skills_logos/django-logo.png"
         },
     ]
-
-    const getData = (skill, value) => {
-        return [
-            { name: skill, value },
-            { name: 'resto', value: 100 - value },
-        ]
-    }
 
     const COLORS = currentTheme === "dark" ? ["#ffffff", "#555555"] : ["#555555", "#ffffff"]
 
