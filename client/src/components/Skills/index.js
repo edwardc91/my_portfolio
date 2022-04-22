@@ -1,7 +1,6 @@
 import React from "react";
 import { Row, Col, Typography, Card, Progress, Grid } from "antd"
 import Typed from 'react-typed'
-import { useSelector } from 'react-redux'
 
 const { Title } = Typography;
 
@@ -9,8 +8,6 @@ const { useBreakpoint } = Grid
 
 const Skills = () => {
     const { md } = useBreakpoint();
-
-    const currentTheme = useSelector(state => state.themeSwitch.currentTheme)
 
     const skillsBackendData = [
         {
@@ -105,8 +102,6 @@ const Skills = () => {
             image_url: "images/skills_logos/django-logo.png"
         },
     ]
-
-    const COLORS = currentTheme === "dark" ? ["#ffffff", "#555555"] : ["#555555", "#ffffff"]
 
     const generateSkills = (skills) => {
         return (
