@@ -100,5 +100,22 @@ body[data-theme="light"] {
       color: $fontColor;
     }
 
+    .ant-select-item-option-active {
+      background-color: $secondaryBackgroundColor !important;
+    }
+    .ant-select-item-option-active:hover {
+      background-color: $secondaryBackgroundColor !important;
+    }
+    .ant-select-item-option {
+      background-color: $primaryBackgroundColor;
+    }
+    .ant-select-selector {
+      background-color: $primaryBackgroundColor !important;
+      border-color: $primaryBackgroundColor !important;
+    }
+    .ant-select-arrow {
+      color: $fontColor;
+    }
+
 
 }

@@ -9,6 +9,8 @@ import store from "./config/store";
 import 'antd/dist/antd.min.css'
 import './fonts/Half_Bold_Pixel-7/half-bold-pixel-7.regular.ttf';
 
+import './i18n';
+
 const container = document.getElementById('root');
 
 // Create a root.

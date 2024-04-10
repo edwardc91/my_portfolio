@@ -7,6 +7,7 @@ import {
     Grid
 } from 'antd'
 import Typed from "react-typed";
+import { useTranslation } from 'react-i18next';
 
 const { Title } = Typography;
 
@@ -14,6 +15,7 @@ const { useBreakpoint } = Grid;
 
 const Header = () => {
     const { md } = useBreakpoint();
+    const {t} = useTranslation('common')
 
     return (
         <div className="main-container-home" style={{ paddingBottom: "8%", height: "100vh", overflow: "auto" }}>
@@ -24,7 +26,7 @@ const Header = () => {
                             <Col className="front-particles" span={12}>
                                 <a href="https://github.com/edwardc91">
                                     <Image src="images/github-qr.svg" preview={false} style={{ width: 130 }} />
-                                    <Title className="title font-pixel" level={3}> Check my github here</Title>
+                                    <Title className="title font-pixel" level={3}> {t("header.check_github","Check my github here")}</Title>
                                 </a>
                             </Col>
                         </Row>
