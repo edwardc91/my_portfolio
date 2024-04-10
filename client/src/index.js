@@ -12,7 +12,7 @@ import './fonts/Half_Bold_Pixel-7/half-bold-pixel-7.regular.ttf';
 const container = document.getElementById('root');
 
 // Create a root.
-const root = ReactDOM.createRoot(container);
+const root = ReactDOM.unstable_createRoot(container);
 
 root.render(
   <Provider store={store}>
