@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Col, Grid, Row, Drawer, Button, Menu, Space } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 
+import { useTranslation } from "react-i18next";
+
 import "./index.scss";
 
 import ThemeSwitch from "../ThemeSwitch";
@@ -11,6 +13,8 @@ const { useBreakpoint } = Grid;
 const { Item } = Menu;
 
 const BottomNavbar = () => {
+  const { t } = useTranslation("common");
+
   const { md } = useBreakpoint();
 
   const [drawerVisible, setDrawerVisible] = useState(false);
@@ -39,7 +43,7 @@ const BottomNavbar = () => {
                 className="font-pixel font-color nav-bar-links"
                 href="#about-me"
               >
-                About me
+                {t("about_me", "About me")}
               </a>
             </Col>
             <Col flex="auto">
@@ -47,12 +51,12 @@ const BottomNavbar = () => {
                 className="font-pixel font-color nav-bar-links"
                 href="#experience"
               >
-                Experience
+                {t("experience", "Experience")}
               </a>
             </Col>
             <Col flex="auto">
               <a className="font-pixel font-color nav-bar-links" href="#skills">
-                Skills
+                {t("skills", "Skills")}
               </a>
             </Col>
             <Col flex="auto">
@@ -60,7 +64,7 @@ const BottomNavbar = () => {
                 className="font-pixel font-color nav-bar-links"
                 href="#contact"
               >
-                Contact
+                {t("contact", "Contact")}
               </a>
             </Col>
           </>
@@ -87,7 +91,7 @@ const BottomNavbar = () => {
                     className="font-pixel font-color nav-bar-links"
                     href="#about-me"
                   >
-                    About me
+                    {t("about_me", "About me")}
                   </a>
                 </Item>
                 <Item>
@@ -95,7 +99,7 @@ const BottomNavbar = () => {
                     className="font-pixel font-color nav-bar-links"
                     href="#experience"
                   >
-                    Experience
+                    {t("experience", "Experience")}
                   </a>
                 </Item>
                 <Item>
@@ -103,7 +107,7 @@ const BottomNavbar = () => {
                     className="font-pixel font-color nav-bar-links"
                     href="#skills"
                   >
-                    Skills
+                    {t("skills", "Skills")}
                   </a>
                 </Item>
                 <Item>
@@ -111,7 +115,7 @@ const BottomNavbar = () => {
                     className="font-pixel font-color nav-bar-links"
                     href="#contact"
                   >
-                    Contact
+                    {t("contact", "Contact")}
                   </a>
                 </Item>
               </Menu>

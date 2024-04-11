@@ -2,13 +2,13 @@ import React from "react";
 
 import { Select } from "antd";
 
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 import "./index.scss";
 
 const LangSelection = () => {
   const { i18n } = useTranslation();
-  
+
   const handleOnChange = (lng) => {
     i18n.changeLanguage(lng);
   };

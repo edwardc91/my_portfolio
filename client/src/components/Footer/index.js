@@ -7,6 +7,8 @@ import { GithubFilled,
         MailOutlined,
     } from '@ant-design/icons';
 
+import { useTranslation } from "react-i18next";
+
 import "./index.scss";
 
 const { Title } = Typography;
@@ -14,6 +16,8 @@ const { Title } = Typography;
 const { useBreakpoint } = Grid
 
 const Footer = () => {
+    const { t } = useTranslation("common");
+
     const { md } = useBreakpoint();
 
     return (
@@ -31,7 +35,7 @@ const Footer = () => {
             </Row>
             <Row id="contact" justify="center" style={{ marginTop: "1%" }}>
                 <Col span={24} style={{ textAlign: "center" }}>
-                    <Title className="font-pixel" style={{ color: "white"}} level={3}>Contact</Title>
+                    <Title className="font-pixel" style={{ color: "white"}} level={3}>{t("Footer.title", "Contact")}</Title>
                 </Col>
             </Row>
             <Row justify="center">

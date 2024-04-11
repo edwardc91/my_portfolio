@@ -1,5 +1,28 @@
 {
-    "header": {
-        "check_github": "Check my github here"
-    }
+  "about_me": "About me",
+  "experience": "Experience",
+  "skills": "Skills",
+  "contact": "Contact",
+  "header": {
+    "check_github": "Check my github here",
+    "description_1": "Fullstack Developer",
+    "description_2": "Backend Developer",
+    "description_3": "Graphics Engine enthusiastic",
+    "description_4": "Also i love huskies",
+    "keep_scrolling": "Keep scrolling to learn more..."
+  },
+  "ThemeSwitch": {
+    "switch_label": "Change theme"
+  },
+  "About": {
+    "title": "$t(about_me)",
+    "paragraph_1": "Graduated of the Central University of Las Villas \"Marta Abreus\" in 2015 with a bachelor's degree in Computer Science. Worked fours years on Chemical Biocative's Center as a software and web applications developer and also in the data managment of a clinical trial. One year working in several projects in the software developer company Desoft, while also working as software developer for a smart light plataform for canadian company IllumenAI . Later worked on Geocuba Company Group as a main specialist creating plataforms for managment of services and company data's thorugh the web. Currently working as one of the developers of AISCO's product AISCO Workspace, a plataform to facilite the collaboration between dealers and customers in the design and quote of irrigation projects for farms.",
+    "paragraph_2": "Pasionate and avid to learn new technologies and solve problems. I like to have fun while coding, so that results on a higher quality product. I have the moto that most of the time the best solution is the easiest to implement and the hardest to find. Good communication skills and willing to help fellow coworkers."
+  },
+  "Skills": {
+    "title": "$t(skills)"
+  },
+  "Footer": {
+    "title": "$t(contact)"
+  }
 }
