@@ -13,6 +13,8 @@ const About = () => {
 
   const { md } = useBreakpoint();
 
+  const section_title = t("About.title", "About me")
+
   return (
     <div id="about-me" className="about-container" style={{ padding: "5%" }}>
       <Row justify="center">
@@ -37,7 +39,7 @@ const About = () => {
             style={{ fontSize: "16px", textAlign: "justify" }}
           >
             <Title className="font-color">
-              <Typed strings={[t("About.title", "About me")]} typeSpeed={40} />
+              <Typed strings={[section_title]} typeSpeed={110} loop/>
             </Title>
             <Paragraph className="font-color">
               <Trans t={t} i18nKey="About.paragraph_1">

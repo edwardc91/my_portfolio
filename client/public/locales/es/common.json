@@ -1,5 +1,50 @@
 {
-    "header": {
-        "check_github": "Revise mi github aquí"
+  "about_me": "Acerca de mí",
+  "experience": "Experiencia",
+  "skills": "Habilidades",
+  "contact": "Contacto",
+  "present": "presente",
+  "header": {
+    "check_github": "Revise mi github aquí",
+    "description_1": "Desarrollador Fullstack",
+    "description_2": "Desarrollador Backend",
+    "description_3": "Entusiasta de motores gráficos",
+    "description_4": "y también me encantan los huskies",
+    "keep_scrolling": "Siga desplazándose para conocer más..."
+  },
+  "ThemeSwitch": {
+    "switch_label": "Cambiar tema"
+  },
+  "About": {
+    "title": "$t(about_me)",
+    "paragraph_1": "Graduado de la Universidad Central de Las Villas \"Marta Abreus\" en el año 2015 con título de Licenciado en Ciencia de la Computación. Trabajé cuatro años en el Centro de Bioactivos Químicos como desarrollador de software y aplicaciones web y también en el manejo de datos de un ensayo clínico. Durante un año trabajé en varios proyectos como desarrollador en la empresa Desoft, a la vez que trabajaba como desarrollador de una plataforma de la empresa canadiense IllumenAI para el manejo de iluminación inteligente. Más adelante trabajaría para el grupo empresarial Geocuba como especialista principal creando aplicaciones web para el manejo de sus servicios y datos. Actualmente trabajo como uno de los desarrolladores de un producto de AISCO llamado AISCO Workspace, una plataforma para facilitar la colaboración entre distribuidores y clientes durante el diseño de proyectos de riegos en granjas.",
+    "paragraph_2": "Apasionado y ávido por aprender nuevas tecnologías y solucionar problemas. Mi lema es que la mayoría de las veces la mejor solución es la más fácil de implementar, pero la más difícil de encontrar. Poseo buenas habilidades de comunicación y el deseo de ayudar a mis compañeros de trabajo."
+  },
+  "Skills": {
+    "title": "$t(skills)"
+  },
+  "Footer": {
+    "title": "$t(contact)"
+  },
+  "Experience": {
+    "title": "$t(experience)",
+    "position_sd": "Desarrollador de Software",
+    "position_sis": "Especialista en Ciencias Informáticas",
+    "aisco": {
+      "description": "Desarrollo del cliente y microservicios del producto AISCO Workspace, una plataforma para facilitar la colaboración entre distribuidores y clientes en el diseño de sistemas de riegos para granjas y cultivos."
+    },
+    "geocuba": {
+      "description": "Desarrollo de aplicaciones web para servicios geo-espaciales."
+    },
+    "illumen": {
+      "description": "Desarrollo de una plataforma para el manejo de luces inteligentes y sensores usando AWS IoT. Desarrollo de un software para calcular agregación de valores de consumos eléctricos. Gestión y despliegues in AWS."
+    },
+    "desoft": {
+      "description": "Desarrollo de sistemas ERP (Enterprise Resource Planning) para diversas compañias."
+    },
+    "cbq": {
+      "company": "Centro de Bioactivos Químicos (Universidad Central de las Villas)",
+      "description": "Desarrollo de aplicaciones web, desarrollo y manejo de la página web del centro, y especialista en el manejo de datos para un ensayo clínico."
     }
+  }
 }

@@ -3,6 +3,7 @@
   "experience": "Experience",
   "skills": "Skills",
   "contact": "Contact",
+  "present": "present",
   "header": {
     "check_github": "Check my github here",
     "description_1": "Fullstack Developer",
@@ -17,12 +18,33 @@
   "About": {
     "title": "$t(about_me)",
     "paragraph_1": "Graduated of the Central University of Las Villas \"Marta Abreus\" in 2015 with a bachelor's degree in Computer Science. Worked fours years on Chemical Biocative's Center as a software and web applications developer and also in the data managment of a clinical trial. One year working in several projects in the software developer company Desoft, while also working as software developer for a smart light plataform for canadian company IllumenAI . Later worked on Geocuba Company Group as a main specialist creating plataforms for managment of services and company data's thorugh the web. Currently working as one of the developers of AISCO's product AISCO Workspace, a plataform to facilite the collaboration between dealers and customers in the design and quote of irrigation projects for farms.",
-    "paragraph_2": "Pasionate and avid to learn new technologies and solve problems. I like to have fun while coding, so that results on a higher quality product. I have the moto that most of the time the best solution is the easiest to implement and the hardest to find. Good communication skills and willing to help fellow coworkers."
+    "paragraph_2": "Pasionate and avid to learn new technologies and solve problems. I have the moto that most of the time the best solution is the easiest to implement and the hardest to find. Good communication skills and willing to help fellow coworkers."
   },
   "Skills": {
     "title": "$t(skills)"
   },
   "Footer": {
     "title": "$t(contact)"
+  },
+  "Experience": {
+    "title": "$t(experience)",
+    "position_sd": "Software Developer",
+    "position_sis": "Specialist in Informatics Science",
+    "aisco": {
+      "description": "Development of the client side and microservices of the company's product AISCO Workspace, a plataform to facilite the collaboration between dealers and customers in the design and quote of irrigation systems for farms and crops."
+    },
+    "geocuba": {
+      "description": "Development of Web Applications for geo-spatial related services."
+    },
+    "illumen": {
+      "description": "Development of a plataform for smart lights and sensors managment using AWS IoT. Development of software to calculate aggregation of electric consumption's data. Managment and deployment in AWS."
+    },
+    "desoft": {
+      "description": "ERP systems development  for several process in several companies."
+    },
+    "cbq": {
+      "company": "Chemical Bioactive Center (Central University of Las Villas)",
+      "description": "Web applications developer, landing page developer and manager, and data manager specialist of a clinical trail."
+    }
   }
 }
