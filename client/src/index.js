@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
 import './index.scss';
 import App from './modules/app';
 import reportWebVitals from './reportWebVitals';
@@ -14,12 +14,13 @@ import './i18n';
 const container = document.getElementById('root');
 
 // Create a root.
-const root = ReactDOM.unstable_createRoot(container);
+//const root = ReactDOM.createRoot(container);
 
-root.render(
+render(
   <Provider store={store}>
     <App />
-  </Provider >
+  </Provider >,
+  container
 );
 
 // If you want to start measuring performance in your app, pass a function
