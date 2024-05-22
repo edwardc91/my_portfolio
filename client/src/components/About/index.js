@@ -55,7 +55,7 @@ const About = () => {
                 main specialist creating plataforms for managment of services
                 and company data's thorugh the web. Currently working as one of
                 the developers of AISCO's product AISCO Workspace, a plataform
-                to facilite the collaboration between dealers and customers in
+                to facilitate the collaboration between dealers and customers in
                 the design and quote of irrigation projects for farms.
               </Trans>
             </Paragraph>

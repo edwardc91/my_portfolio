@@ -44,6 +44,11 @@ const Skills = () => {
       image_url: "images/skills_logos/postgresql-logo.png",
     },
     {
+      name: "MongoDB",
+      value: 45,
+      image_url: "images/skills_logos/postgresql-logo.png",
+    },
+    {
       name: "Odoo",
       value: 75,
       image_url: "images/skills_logos/postgresql-logo.png",
@@ -77,7 +82,7 @@ const Skills = () => {
       image_url: "images/skills_logos/django-logo.png",
     },
     {
-      name: "Bootstrap",
+      name: "NextJS",
       value: 70,
       image_url: "images/skills_logos/flask-logo.png",
     },
@@ -95,7 +100,37 @@ const Skills = () => {
       image_url: "images/skills_logos/django-logo.png",
     },
     {
+      name: "Kubernetes/Helm",
+      value: 30,
+      image_url: "images/skills_logos/django-logo.png",
+    },
+    {
+      name: "ArgoCD",
+      value: 30,
+      image_url: "images/skills_logos/django-logo.png",
+    },
+    {
+      name: "Prometheus/Grafana",
+      value: 30,
+      image_url: "images/skills_logos/django-logo.png",
+    },
+    {
+      name: "Terraform",
+      value: 40,
+      image_url: "images/skills_logos/django-logo.png",
+    },
+    {
+      name: "Shell Script/Powershell",
+      value: 40,
+      image_url: "images/skills_logos/django-logo.png",
+    },
+    {
       name: "AWS",
+      value: 50,
+      image_url: "images/skills_logos/django-logo.png",
+    },
+    {
+      name: "Azure",
       value: 50,
       image_url: "images/skills_logos/django-logo.png",
     },
